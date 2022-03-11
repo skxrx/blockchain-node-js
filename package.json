@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "crypto-js": "^4.1.1",
+    "elliptic": "^6.5.4",
     "prettier": "^2.5.1"
   },
   "prettier": {
