@@ -34,7 +34,7 @@ console.log('starting the miner of block 3...')
 BLOCKCHAIN.minePendingTransactions(myWallet.publicKey)
 
 console.log(
-  "Balance of Alice's account is: ",
+  "balance of Alice's account is: ",
   BLOCKCHAIN.getBalanceOfAddress(aliceWallet.publicKey)
 )
 

@@ -25,7 +25,7 @@ export default class Block {
       this.nonce++
       this.hash = this.calculateHash()
     }
-    console.log('Block mined, nonce: ' + this.nonce + ', hash: ' + this.hash)
+    console.log('block mined, nonce: ' + this.nonce + ', hash: ' + this.hash)
   }
 
   hasValidTransactions() {

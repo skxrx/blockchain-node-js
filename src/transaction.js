@@ -16,7 +16,7 @@ export default class Transaction {
 
   signTransaction(signingKey) {
     if (signingKey.getPublic('hex') !== this.fromAddress) {
-      throw new Error('You cannot sign transactions for other wallets!')
+      throw new Error('you cannot sign transactions for other wallets!')
     }
     const txHash = this.calculateHash()
 
@@ -29,7 +29,7 @@ export default class Transaction {
   isValid() {
     if (this.fromAddress === null) return true
     if (!this.signature || this.signature.length === 0) {
-      throw new Error('No signature in this transaction')
+      throw new Error('no signature in this transaction')
     }
     const publicKey = ec.keyFromPublic(this.fromAddress, 'hex')
     return publicKey.verify(this.calculateHash(), this.signature)
